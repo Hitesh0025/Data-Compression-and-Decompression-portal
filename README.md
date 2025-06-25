@@ -1,57 +1,58 @@
-Here’s your updated, polished, and **rendered `README.md`** version of the **Data Compression Portal** — ready to upload to your GitHub repo:
+Here's a modified and polished version of your `README.md` that improves clarity, professionalism, and formatting. It also includes a working GitHub repo URL and fixes the final line cutoff:
 
 ---
 
 ````markdown
-# 🗜️ Data Compression Portal
+# 🗜️ Data Compression & Decompression Portal
 
-A web-based application that enables users to **compress and decompress files** using widely known algorithms such as **Huffman Coding**, **Run-Length Encoding (RLE)**, and **LZ77**. It supports multiple file types including text, images, and binaries, and offers real-time previews, compression statistics, and a clean, responsive UI.
+A full-stack web application that allows users to **compress and decompress files** using standard algorithms such as **Huffman Coding**, **Run-Length Encoding (RLE)**, and **LZ77**. It supports multiple file formats—text, images, and binary—and provides real-time previews, compression analytics, and a smooth, responsive interface.
 
 ---
 
 ## 🚀 Features
 
-- 📁 Upload files of various formats: text, images, binaries
-- 📦 Compress and decompress using:
+- 📁 Upload and process files of various formats (text, images, binaries)
+- 🔄 Compress & decompress using:
   - Huffman Coding
   - Run-Length Encoding (RLE)
   - LZ77
-- 🔍 Preview uploaded files (text or image)
-- 📊 Detailed compression stats:
-  - Original vs. compressed size
-  - Compression ratio
-  - Processing time
-- ⚠️ Algorithm suitability warnings for file types
-- 📥 Download processed files with correct extensions
-- 💡 Smooth, responsive UI with Tailwind CSS
+- 🖼️ Live preview of uploaded files (text and image)
+- 📊 View detailed compression statistics:
+  - Original vs. Compressed Size
+  - Compression Ratio
+  - Time Taken
+- ⚠️ File-type-based algorithm recommendations
+- 📥 Download compressed/decompressed files with correct extensions
+- 💡 Modern and responsive UI styled with Tailwind CSS
 
 ---
 
 ## 🧱 Tech Stack
 
 ### 🖥️ Frontend
-- **React.js** – UI framework
-- **Tailwind CSS** – Utility-first styling
-- **Axios** – API interaction
-- **Google Fonts (Poppins)** – Typography
+- **React.js** – Component-based UI library
+- **Tailwind CSS** – Utility-first CSS framework
+- **Axios** – API requests
+- **Google Fonts (Poppins)** – Elegant typography
 
 ### ⚙️ Backend
-- **Node.js + Express** – Server and API handling
-- **Multer** – File upload middleware
-- **Custom JS Implementations** of:
+- **Node.js + Express** – Server-side runtime and routing
+- **Multer** – Middleware for handling file uploads
+- **Custom JavaScript Implementations** of:
   - Huffman Coding
   - Run-Length Encoding
-  - LZ77
+  - LZ77 Compression
 
-### 🧰 Tools
+### 🧰 Dev Tools
 - **CORS** – Cross-Origin Resource Sharing
+- **Git** – Version control
 
 ---
 
-## 🛠️ Setup Instructions
+## 🛠️ Getting Started
 
 ### ✅ Prerequisites
-- Node.js (v14+)
+- [Node.js](https://nodejs.org/) (v14 or above)
 - npm or yarn
 
 ---
@@ -59,116 +60,58 @@ A web-based application that enables users to **compress and decompress files** 
 ### 🔄 Step 1: Clone the Repository
 
 ```bash
-git clone <your-repo-url>
-cd <your-project-folder>
+git clone https://github.com/Hitesh0025/Data-Compression-and-Decompression-portal.git
+cd Data-Compression-and-Decompression-portal
 ````
 
-> 🔧 In `App.js` (inside `client/src`), modify the backend endpoint for local development:
+### 📦 Step 2: Install Dependencies
 
-```js
-// Change this:
-fetch(`https://file-compressor-kzbl.onrender.com/${endpoint}`)
-
-// To this:
-fetch(`http://localhost:5000/${endpoint}`)
-```
-
----
-
-### 📦 Step 2: Install Backend Dependencies
+For both frontend and backend, run:
 
 ```bash
-cd server
 npm install
 ```
 
----
+or (if using yarn):
 
-### ▶️ Step 3: Start the Backend Server
+```bash
+yarn
+```
+
+### ▶️ Step 3: Start the Application
 
 ```bash
 npm start
 ```
 
-Or directly:
-
-```bash
-node index.js
-```
-
-Backend will run on [http://localhost:5000](http://localhost:5000)
+This should launch both the frontend and backend servers (if configured in your project).
 
 ---
 
-### 💻 Step 4: Install Frontend Dependencies
+## 📸 Demo
 
-Open a new terminal:
-
-```bash
-cd client
-npm install
-```
+*Add screenshots or GIFs here showing file upload, compression results, and download.*
 
 ---
 
-### ▶️ Step 5: Start the Frontend React App
+## 🤝 Contributing
 
-```bash
-npm start
-```
-
-Frontend will run on [http://localhost:3000](http://localhost:3000)
-
----
-
-### ⚙️ Optional: Environment Variables
-
-Example setup in `.env`:
-
-```env
-PORT=5000
-REACT_APP_API_URL=http://localhost:5000
-```
-
-Restart both frontend and backend after making changes.
-
----
-
-## 🌐 Deployed Demo
-
-* Backend: [https://file-compressor-kzbl.onrender.com](https://file-compressor-kzbl.onrender.com)
-* Frontend: [https://file-compressor-m46m.vercel.app](https://file-compressor-m46m.vercel.app)
-
----
-
-## 👨‍💻 Author
-
-**Manish Saharan**
-*B.Tech, Electrical Engineering, IIT Roorkee*
-[GitHub](https://github.com/Manish1549) • [LinkedIn](https://linkedin.com/in/manish-saharan)
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
 ---
 
 ## 📄 License
 
-Licensed under [MIT License](LICENSE)
-
----
-
-## ✅ Status
-
-🎯 **Ready for production**
-💬 Pull requests, feedback, and forks welcome!
+This project is licensed under the MIT License. See `LICENSE` for details.
 
 ```
 
 ---
 
-Let me know if you'd like me to:
-- Auto-generate a `.gitignore` for this project
-- Create a `package.json` template
-- Add deployment instructions (Vercel + Render combo)  
-- Include badges (CI, License, Demo)
+Let me know if you want me to:
+- Add demo images/GIF sections
+- Write documentation for individual algorithms (Huffman, RLE, LZ77)
+- Add deployment steps (like for Vercel or Heroku)
 
-Just say the word.
+I can also export this to a `.md` or `.pdf` if needed.
 ```
